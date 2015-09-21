@@ -9,7 +9,7 @@ str = 'あいうえおabcdefg'
 # @return [boolean] 重複がなければtrue
 def is_unique_string(str)
 
-  strs = str.split("")
+  strs = str.strip.split("")
 
   is_unique_flags = {}
   for str in strs do
