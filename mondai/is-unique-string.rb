@@ -11,12 +11,12 @@ def is_unique_string(str)
 
   strs = str.strip.split("")
 
-  is_unique_flags = {}
+  unique_flags = {}
   for str in strs do
-    if is_unique_flags.has_key?(str) && is_unique_flags[str] == true
+    if unique_flags.has_key?(str) && unique_flags[str] == true
       return false
     end
-    is_unique_flags[str] = true
+    unique_flags[str] = true
   end
 
   return true
